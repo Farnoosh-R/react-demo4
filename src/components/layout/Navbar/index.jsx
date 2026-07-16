@@ -101,6 +101,11 @@ const Navbar = () => {
           برنامه‌ریزی سفر
         </Button> */}
 
+          {/* Logo */}
+        <Link to="/">
+          <img src={logo} className="w-25" />
+        </Link>
+
         {/* Menu */}
         <div
           className={`
@@ -124,10 +129,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Logo */}
-        <Link to="/">
-          <img src={logo} className="w-25" />
-        </Link>
+      
 
         {/* Hamburger */}
         <button

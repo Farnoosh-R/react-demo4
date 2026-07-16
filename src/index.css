@@ -45,16 +45,16 @@
   }
 
   :root {
-    --color-primary: #7bf1a8;
+    --color-primary: #05df72;
     --color-secondary: #0c0e27;
     --color-dark: #2b2b2b;
-    --color-muted: #99a1af;
-    --color-light: #d1d5dc;
-    --color-primary-sharp: #05df72;
+    --color-muted: #b1b1b1;
+    --color-light: #dedede;
+    --color-primary-light: #7bf1a8;
 
     --gradient-primary: linear-gradient(120deg,
-        var(--color-primary) 0%,
-        var(--color-primary-sharp) 100%);
+        var(--color-primary-light) 0%,
+        var(--color-primary) 100%);
   }
 
   * {
@@ -110,46 +110,28 @@
     box-sizing: border-box;
   }
 
-  h1 {
-    font-size: 3rem;
-    /* ~48px */
-    line-height: 1.2;
-    font-weight: 700;
+   h1 {
+    @apply text-3xl md:text-5xl lg:text-[4rem] leading-[1.5] font-bold;
   }
 
   h2 {
-    font-size: 2.25rem;
-    /* ~36px */
-    line-height: 1.3;
-    font-weight: 700;
+    @apply text-2xl md:text-4xl lg:text-[2.25rem] leading-[1.5] font-bold;
   }
 
   h3 {
-    font-size: 1.75rem;
-    /* ~28px */
-    line-height: 1.4;
-    font-weight: 600;
+    @apply text-xl md:text-3xl lg:text-[1.75rem] leading-[1.4] font-semibold;
   }
 
   h4 {
-    font-size: 1.5rem;
-    /* ~24px */
-    line-height: 1.4;
-    font-weight: 600;
+    @apply text-lg md:text-2xl lg:text-[1.5rem] leading-[1.4] font-semibold;
   }
 
   h5 {
-    font-size: 1.25rem;
-    /* ~20px */
-    line-height: 1.5;
-    font-weight: 500;
+    @apply text-base md:text-lg lg:text-[1.25rem] leading-[1.7] font-medium;
   }
 
   h6 {
-    font-size: 1rem;
-    /* ~16px */
-    line-height: 1.5;
-    font-weight: 500;
+    @apply text-sm md:text-base lg:text-[1rem] leading-[1.5] font-medium;
   }
 }
 
