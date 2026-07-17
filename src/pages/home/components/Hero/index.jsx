@@ -1,6 +1,13 @@
 import heroBg from "../../assets/images/heroBg.jpg";
 import heroSmall from "../../assets/images/hero-small.png";
 import Button from "../../../../components/shared/Button";
+import {
+  FaInstagram,
+  FaTelegram,
+  FaWhatsapp,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -20,7 +27,7 @@ const Hero = () => {
           {[0, 10, 20, 30].map((offset) => (
             <div
               key={offset}
-              className="absolute border-2 border-white/20 border-t-0 rounded-b-[90px]"
+              className="absolute border-2 border-white/40 border-t-0 rounded-b-[90px]"
               style={{
                 top: offset,
                 left: offset,
@@ -31,9 +38,17 @@ const Hero = () => {
           ))}
         </div>
 
-        <div className="w-full lg:w-3/4 h-[650px]  bg-[var(--color-secondary)] rounded-br-[350px]">
+        <div
+          className="w-full lg:w-3/4 h-[650px] rounded-br-[350px]"
+          style={{
+            backgroundImage: `url(${heroBg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute left-0 w-full lg:w-3/4 h-[650px] rounded-br-[350px] bg-[var(--color-secondary)]/90"></div>
           <div className="absolute top-10 lg:top-10 right-4 lg:right-40 flex flex-col lg:flex-row gap-5 lg:gap-12">
-            <div className=" z-10 overflow-hidden objecy-cover w-[90%] lg:w-[45%] lg:h-[500px] rounded-tl-[180px] rounded-tr-[180px] rounded-bl-[180px] rounded-br-lg">
+            <div className=" z-10 overflow-hidden object-cover w-[90%] lg:w-[45%] lg:h-[500px] rounded-tl-[180px] rounded-tr-[180px] rounded-bl-[180px] rounded-br-lg">
               <img
                 src={heroSmall}
                 className="w-full h-full object-cover"
@@ -62,10 +77,58 @@ const Hero = () => {
                 <Button variant="primary" size="lg">
                   شروع همکاری
                 </Button>
-                <Button variant="primary" size="lg">
+                <Button variant="primary" btnType="outline" size="lg">
                   مشاوره رایگان
                 </Button>
-                <div>2</div>
+              </div>
+              <div className="flex justify-end">
+                <div className="w-[20px] h-[20px] border border-white rounded-full"></div>
+                <div className="w-[20px] h-[20px] bg-white/25 rounded-full mt-[-10px] mr-[-10px]"></div>
+              </div>
+              <div className="flex gap-10 justify-center">
+                <a
+                  href=""
+                  className="w-11 h-11 flex items-center justify-center rounded-full
+                  bg-white/10 text-white
+                  transition-all duration-300
+                  hover:bg-[var(--color-primary)]
+                  hover:-translate-y-2
+                  hover:shadow-lg hover:shadow-[var(--color-primary)]/30"
+                >
+                  <FaInstagram color="var(--color-light)" size={20} />
+                </a>
+                <a href=""  className="w-11 h-11 flex items-center justify-center rounded-full
+                  bg-white/10 text-white
+                  transition-all duration-300
+                  hover:bg-[var(--color-primary)]
+                  hover:-translate-y-2
+                  hover:shadow-lg hover:shadow-[var(--color-primary)]/30">
+                  <FaTelegram color="var(--color-light)" size={20} />
+                </a>
+                <a href=""  className="w-11 h-11 flex items-center justify-center rounded-full
+                  bg-white/10 text-white
+                  transition-all duration-300
+                  hover:bg-[var(--color-primary)]
+                  hover:-translate-y-2
+                  hover:shadow-lg hover:shadow-[var(--color-primary)]/30">
+                  <FaWhatsapp color="var(--color-light)" size={20} />
+                </a>
+                <a href=""  className="w-11 h-11 flex items-center justify-center rounded-full
+                  bg-white/10 text-white
+                  transition-all duration-300
+                  hover:bg-[var(--color-primary)]
+                  hover:-translate-y-2
+                  hover:shadow-lg hover:shadow-[var(--color-primary)]/30">
+                  <FaYoutube color="var(--color-light)" size={20} />
+                </a>
+                <a href=""  className="w-11 h-11 flex items-center justify-center rounded-full
+                  bg-white/10 text-white
+                  transition-all duration-300
+                  hover:bg-[var(--color-primary)]
+                  hover:-translate-y-2
+                  hover:shadow-lg hover:shadow-[var(--color-primary)]/30">
+                  <FaLinkedin color="var(--color-light)" size={20} />
+                </a>
               </div>
             </div>
           </div>

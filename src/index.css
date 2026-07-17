@@ -6,7 +6,8 @@
 @layer base {
   @font-face {
     font-family: "vazir";
-    src: url("../src/assets/fonts/Vazirmatn-FD-NL-Regular.woff2") format("woff2");
+    src: url("../src/assets/fonts/Vazirmatn-FD-NL-Regular.woff2")
+      format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -22,7 +23,8 @@
 
   @font-face {
     font-family: "vazir";
-    src: url("../src/assets/fonts/Vazirmatn-FD-NL-SemiBold.woff2") format("woff2");
+    src: url("../src/assets/fonts/Vazirmatn-FD-NL-SemiBold.woff2")
+      format("woff2");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -50,11 +52,21 @@
     --color-dark: #2b2b2b;
     --color-muted: #b1b1b1;
     --color-light: #dedede;
-    --color-primary-light: #7bf1a8;
+    --color-gray: #848484;
+    --color-primary-alpha: #7bf1a8;
+    --color-primary-beta: #00c950;
 
-    --gradient-primary: linear-gradient(120deg,
-        var(--color-primary-light) 0%,
-        var(--color-primary) 100%);
+    --gradient-primary: linear-gradient(
+      90deg,
+      var(--color-primary-alpha) 0%,
+      var(--color-primary) 100%
+    );
+
+    --gradient-secondary: linear-gradient(
+      180deg,
+      var(--color-primary) 0%,
+      var(--color-primary-alpha) 100%
+    );
   }
 
   * {
@@ -84,8 +96,6 @@
     transform: translate(0, 0) scale(1);
   }
 
-
-
   html {
     direction: rtl;
     overflow-x: hidden !important;
@@ -95,9 +105,10 @@
     margin: 0;
     background: var(--bg);
     font-family: "Vazir", sans-serif;
-    color: var(--color-dark);
+    color: var(--color-secondary);
     font-size: 14px;
     overflow-x: hidden !important;
+    /* text-align: justify; */
   }
 
   #root {
@@ -110,7 +121,7 @@
     box-sizing: border-box;
   }
 
-   h1 {
+  h1 {
     @apply text-3xl md:text-5xl lg:text-[4rem] leading-[1.5] font-bold;
   }
 

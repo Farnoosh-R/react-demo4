@@ -18,8 +18,8 @@ const Button = ({
   };
 
   const variants = {
-    primary: "bg-[var(--color-primary)] text-white shadow-lg",
-    secondary: "bg-[var(--color-secondary)] !text-white shadow-lg",
+    primary: "bg-[var(--color-primary)] text-white shadow-xl",
+    secondary: "bg-[var(--color-secondary)] !text-white shadow-xl",
   };
 
   const outlineVariants = {
