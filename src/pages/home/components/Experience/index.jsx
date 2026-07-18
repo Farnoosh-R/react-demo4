@@ -26,7 +26,7 @@ const Experience = () => {
             <div
               className="text-[clamp(100px,16vw,400px)] font-black leading-none text-transparent bg-cover bg-center bg-clip-text"
               style={{
-                backgroundImage: `url(${experience})`,
+                backgroundImage: `url(${experience})`
               }}
             >
               24%
