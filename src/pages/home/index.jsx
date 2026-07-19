@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Banner from "./components/Banner";
+import Customers from "./components/customers";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -14,6 +15,7 @@ const Home = () => {
       <Banner />
       <Experience />
       <Testimonials />
+      <Customers />
     </div>
   );
 };

@@ -94,12 +94,12 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 bg-[var(--color-secondary)] w-full z-50 flex items-center justify-betwee h-[80px]">
+    <nav className="fixed absolute top-0 left-0 bg-[var(--color-secondary)] w-full z-50 flex items-center justify-betwee h-[80px]">
       {/* Right Side */}
       <div className="flex app-container items-center gap-4">
         {/* Logo */}
         <Link to="/">
-          <img src={logo} className="w-25" />
+          <img src={logo} className="w-12" />
         </Link>
 
         {/* Menu */}

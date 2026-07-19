@@ -61,8 +61,8 @@ export default function SliderTestimonials({ items }) {
                     <FaStar className="text-yellow-300"/>
                   </div>
                 </div>
-                <div className="absolute left-1/2 -translate-x-1/2 bottom-1">
-                  <h2 className="text-[var(--color-primary)]">{item.title}</h2>
+                <div className="absolute left-1/2 -translate-x-1/2 bottom-4">
+                  <h3 className="text-[var(--color-primary)]">{item.title}</h3>
                 </div>
               </div>
             </div>
